@@ -1,0 +1,167 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  /* background: #eee; */
+  background-color: #202124;
+  /* background-image: url("https://www.transparenttextures.com/patterns/notebook.png"); */
+}
+
+header {
+  background-color: #2a2926;
+  margin: auto -16px;
+  padding: 16px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  color: #fff;
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+}
+
+footer {
+  position: fixed;
+  /* position: relative; */
+  /* margin-top: auto; */
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2rem;
+}
+
+footer p {
+  color: #ccc;
+  font-size: 0.5rem;
+}
+.note {
+  position: relative;
+
+  background: #202124;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px rgb(138, 137, 137);
+  padding: 10px;
+  width: 240px;
+  margin: 16px;
+  float: left;
+}
+.note h1 {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+  color: #ffffff;
+}
+.note p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  color: #ffffff;
+}
+
+.note button {
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  background-color: #202124;
+  color: #ffffff;
+  border: none;
+  opacity: 0.71;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 50%;
+  visibility: hidden;
+  transition: visibility 0s linear 0.3s;
+}
+.note button:hover {
+  /* opacity: 0.87; */
+  background-color: rgb(86, 89, 92);
+}
+.note:hover button {
+  visibility: visible;
+  transition-delay: 0s;
+}
+
+.child {
+  position: absolute;
+  bottom: 0;
+}
+
+.child:nth-child(2) {
+  right: 60px;
+}
+
+.child:nth-child(1) {
+  right: 0;
+}
+.color-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  /* margin-bottom: 5px; */
+}
+
+.color-menu {
+  /* position: relative; */
+  position: absolute;
+  top: 90%;
+
+  /* top: 10px; */
+  /* left: -30px; */
+  right: -30px;
+  background-color: #202124;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  z-index: 2;
+}
+
+form.create-note {
+  position: relative;
+  /* width: 480px; */
+  max-width: 480px;
+  margin: 30px auto 20px auto;
+  background: #202124;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+form.create-note input,
+form.create-note textarea {
+  width: 100%;
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-size: 1.2em;
+  font-family: inherit;
+  resize: none;
+  background: #202124;
+  color: #ffffff;
+}
+form.create-note input {
+  font-size: 1.5em;
+}
+form.create-note button {
+  position: absolute;
+  right: 18px;
+  bottom: -18px;
+  background: #202124;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+  border: 1px solid white;
+}
